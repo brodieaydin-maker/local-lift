@@ -1,0 +1,70 @@
+body {
+margin: 0;
+font-family: 'Open Sans', sans-serif;
+background: #f4f4f8;
+color: #333;
+}
+
+header {
+background: #5A2D82;
+color: white;
+text-align: center;
+padding: 40px 20px;
+}
+
+.logo {
+font-family: 'Playfair Display', serif;
+font-size: 3rem;
+color: white;
+}
+
+.tagline {
+font-family: 'Montserrat', sans-serif;
+}
+
+.filters {
+text-align: center;
+padding: 20px;
+}
+
+input, select {
+padding: 10px;
+margin: 5px;
+width: 200px;
+}
+
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 20px;
+padding: 20px;
+}
+
+.card {
+background: white;
+padding: 20px;
+border-radius: 16px;
+box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+transition: transform 0.2s ease;
+}
+
+.card:hover {
+transform: translateY(-5px);
+}
+
+.card h3 {
+font-family: 'Montserrat', sans-serif;
+color: #5A2D82;
+}
+
+.badge {
+background: #5A2D82;
+color: white;
+padding: 4px 8px;
+border-radius: 6px;
+font-size: 0.8rem;
+}
+
+.featured {
+border: 2px solid #5A2D82;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Local Lift | Virginia Business Directory</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1 class="logo">Local Lift</h1>
+<p class="tagline">Discover & Support Virginia Small Businesses</p>
+</header>
+
+<section class="filters">
+<input type="text" id="searchBar" placeholder="Search businesses..." onkeyup="renderBusinesses()">
+
+<select id="cityFilter" onchange="renderBusinesses()">
+<option value="All">All Cities</option>
+<option value="Richmond">Richmond</option>
+<option value="Virginia Beach">Virginia Beach</option>
+<option value="Norfolk">Norfolk</option>
+<option value="Roanoke">Roanoke</option>
+<option value="Charlottesville">Charlottesville</option>
+</select>
+
+<select id="categoryFilter" onchange="renderBusinesses()">
+<option value="All">All Categories</option>
+<option value="Food">Food</option>
+<option value="Fitness">Fitness</option>
+<option value="Barbershop">Barbershop</option>
+<option value="Automotive">Automotive</option>
+<option value="Tech">Tech Services</option>
+<option value="Retail">Retail</option>
+</select>
+
+<select id="sortFilter" onchange="renderBusinesses()">
+<option value="rating">Sort by Rating</option>
+<option value="name">Sort by Name</option>
+</select>
+
+</section>
+
+<section id="recommendation"></section>
+<section id="businessList" class="grid"></section>
+
+<script src="script.js"></script>
+</body>
+</html>
